@@ -21,6 +21,7 @@
         app:layout_constraintVertical_bias="0.052" />
 
     <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="304dp"
         android:layout_height="108dp"
         android:contentDescription="InsertName"
@@ -28,20 +29,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.316" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="304dp"
-        android:layout_height="108dp"
+        android:layout_width="145dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="StartBtn"
         android:src="@drawable/startBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.155" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
