@@ -22,6 +22,10 @@
 
         <TextView
             android:id="@+id/option_1"
+            android:text="대학생활계획서"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:gravity="center"
             android:layout_width="450dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -31,6 +35,10 @@
 
         <TextView
             android:id="@+id/option_2"
+            android:text="인성검사, 적성검사"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:gravity="center"
             android:layout_width="450dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -39,6 +47,10 @@
 
         <TextView
             android:id="@+id/option_3"
+            android:text="독서감상문(교양) 2권"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:gravity="center"
             android:layout_width="450dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -47,6 +59,10 @@
 
         <TextView
             android:id="@+id/option_5"
+            android:text="독서감상문(자율) 1권"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:gravity="center"
             android:layout_width="450dp"
             android:layout_height="60dp"
             android:layout_weight="1"
@@ -55,6 +71,10 @@
 
         <TextView
             android:id="@+id/option_6"
+            android:text="외국어수준 LEVEL 1 이상"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:gravity="center"
             android:layout_width="450dp"
             android:layout_height="60dp"
             android:layout_weight="1"
