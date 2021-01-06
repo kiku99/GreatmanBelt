@@ -4,19 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainPage1"
+    android:background="@drawable/mainpage1"
     tools:context=".fragment.checklist">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:weightSum="5"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline2">
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/option_1"
+            android:text="대학생활계획서"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/checklist_sdw"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/option_2"
+            android:text="인성검사, 적성검사"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/checklist_sdw"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/option_3"
+            android:text="독서감상문(교양) 2권"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/checklist_sdw"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/option_5"
+            android:text="독서감상문(자율) 1권"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/checklist_sdw"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/option_6"
+            android:text="외국어수준 LEVEL 1 이상"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/checklist_sdw"
+            android:layout_marginBottom="10dp" />
+
+
 
 
     </LinearLayout>
-
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -37,3 +105,4 @@
 
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
