@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainPage1"
+    android:background="@drawable/mainpage1"
     tools:context=".fragment.checklist">
 
 
@@ -105,3 +105,4 @@
 
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
