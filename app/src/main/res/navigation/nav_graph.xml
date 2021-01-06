@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainGragment">
 
+    <fragment
+        android:id="@+id/mainGragment"
+        android:name="com.example.a2020greatmanbelt.fragment.MainGragment"
+        android:label="fragment_main_gragment"
+        tools:layout="@layout/fragment_main_gragment" >
+        <action
+            android:id="@+id/action_mainGragment_to_checklist"
+            app:destination="@id/checklist" />
+    </fragment>
+    <fragment
+        android:id="@+id/checklist"
+        android:name="com.example.a2020greatmanbelt.fragment.checklist"
+        android:label="fragment_checklist"
+        tools:layout="@layout/fragment_checklist" />
 </navigation>
