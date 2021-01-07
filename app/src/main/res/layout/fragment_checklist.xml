@@ -21,7 +21,7 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="483dp"
+        android:layout_width="match_parent"
         android:layout_height="598dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,10 +45,9 @@
             <TextView
                 android:id="@+id/option_1"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="50dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="10dp"
-                android:layout_weight="1"
                 android:background="@drawable/checklist_sdw"
                 android:gravity="center"
                 android:text="대학생활계획서"
@@ -58,9 +57,8 @@
             <TextView
                 android:id="@+id/option_2"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="100dp"
                 android:layout_marginBottom="10dp"
-                android:layout_weight="1"
                 android:background="@drawable/checklist_sdw"
                 android:gravity="center"
                 android:text="인성검사, 적성검사"
@@ -70,9 +68,8 @@
             <TextView
                 android:id="@+id/option_3"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="100dp"
                 android:layout_marginBottom="10dp"
-                android:layout_weight="1"
                 android:background="@drawable/checklist_sdw"
                 android:gravity="center"
                 android:text="독서감상문(교양) 2권"
@@ -82,9 +79,8 @@
             <TextView
                 android:id="@+id/option_5"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="100dp"
                 android:layout_marginBottom="10dp"
-                android:layout_weight="1"
                 android:background="@drawable/checklist_sdw"
                 android:gravity="center"
                 android:text="독서감상문(자율) 1권"
@@ -94,9 +90,19 @@
             <TextView
                 android:id="@+id/option_6"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="100dp"
                 android:layout_marginBottom="10dp"
-                android:layout_weight="1"
+                android:background="@drawable/checklist_sdw"
+                android:gravity="center"
+                android:text="외국어수준 LEVEL 1 이상"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/option_7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/checklist_sdw"
                 android:gravity="center"
                 android:text="외국어수준 LEVEL 1 이상"
@@ -118,7 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.30969268" />
+        app:layout_constraintGuide_percent="0.33" />
 
 
 
