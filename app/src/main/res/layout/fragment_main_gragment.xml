@@ -15,22 +15,25 @@
         android:src="@drawable/greatman"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.051" />
 
-    <ImageView
+    <EditText
         android:id="@+id/imageView3"
-        android:layout_width="304dp"
-        android:layout_height="108dp"
+        android:layout_width="300dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/insertname"
         android:contentDescription="InsertName"
-        android:src="@drawable/insertname"
+        android:hint="이름을 입력하세요"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/StartBtn"
@@ -43,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.625" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
