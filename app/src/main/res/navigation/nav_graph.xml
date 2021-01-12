@@ -14,9 +14,38 @@
             android:id="@+id/action_mainGragment_to_checklist"
             app:destination="@id/checklist" />
     </fragment>
+
     <fragment
         android:id="@+id/checklist"
         android:name="com.example.a2020greatmanbelt.fragment.checklist"
         android:label="fragment_checklist"
-        tools:layout="@layout/fragment_checklist" />
+        tools:layout="@layout/fragment_checklist" >
+        <action
+            android:id="@+id/action_checklist_to_setting"
+            app:destination="@id/setting" />
+        <action
+            android:id="@+id/action_checklist_to_noticement"
+            app:destination="@id/noticement" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.a2020greatmanbelt.fragment.setting"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_setting_to_checklist"
+            app:destination="@id/checklist" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/noticement"
+        android:name="com.example.a2020greatmanbelt.fragment.noticement"
+        android:label="fragment_noticement"
+        tools:layout="@layout/fragment_noticement" >>
+        <action
+            android:id="@+id/action_noticement_to_checklist"
+            app:destination="@id/checklist" />
+    </fragment>
 </navigation>

@@ -1,146 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainPage1">
+    tools:context=".fragment.noticement">
 
-    //이름 / 학년 설정
-
-    <ImageView
-        android:id="@+id/buttonImage_Name"
-        android:layout_width="360dp"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/settingAccount"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintVertical_bias="0.037" />
-
-    <ImageButton
-        android:id="@+id/changeGrade"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginEnd="44dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        android:src="@drawable/setBtn"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonImage_Name"
-        app:layout_constraintEnd_toEndOf="@+id/buttonImage_Name"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toEndOf="@+id/gradeText"
-        app:layout_constraintTop_toTopOf="@+id/buttonImage_Name"/>
-
-    <TextView
-        android:id="@+id/gradeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="학년"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:fontFamily="sans-serif-black"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonImage_Grade"
-        app:layout_constraintEnd_toEndOf="@+id/buttonImage_Grade"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/buttonImage_Grade"
-        app:layout_constraintTop_toTopOf="@+id/buttonImage_Grade" />
-
-
-    <ImageView
-        android:id="@+id/buttonImage_Grade"
-        android:layout_width="360dp"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/settingAccount"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintVertical_bias="0.037" />
-
-    <ImageButton
-        android:id="@+id/changeGrade"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginEnd="44dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        android:src="@drawable/setBtn"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonImage_Grade"
-        app:layout_constraintEnd_toEndOf="@+id/buttonImage_Grade"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toEndOf="@+id/gradeText"
-        app:layout_constraintTop_toTopOf="@+id/buttonImage_Grade"/>
-
-    <TextView
-        android:id="@+id/gradeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="학년"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:fontFamily="sans-serif-black"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonImage_Grade"
-        app:layout_constraintEnd_toEndOf="@+id/buttonImage_Grade"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/buttonImage_Grade"
-        app:layout_constraintTop_toTopOf="@+id/buttonImage_Grade" />
-    //푸시 알림 설정
-
-    <ImageView
-        android:id="@+id/buttonImage_PushAlert"
-        android:layout_width="360dp"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/settingAccount"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
-
-    <ImageButton
-        android:id="@+id/whatIsMeaningOfPushAlert"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:scaleType="fitXY"
-        android:background="@android:color/transparent"
-        android:src="@drawable/aboutPushalertBtn"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintEnd_toEndOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toEndOf="@+id/pushAlertText"
-        app:layout_constraintTop_toTopOf="@+id/buttonImage_PushAlert" />
-
-    <TextView
-        android:id="@+id/pushAlertText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="푸시 알림"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:fontFamily="sans-serif-black"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintEnd_toEndOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintTop_toTopOf="@+id/buttonImage_PushAlert" />
-
-    <Switch
-        android:id="@+id/pushAlertIO"
-        android:layout_width="70dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintEnd_toEndOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintHorizontal_bias="0.90"
-        app:layout_constraintStart_toStartOf="@+id/buttonImage_PushAlert"
-        app:layout_constraintTop_toTopOf="@+id/buttonImage_PushAlert" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mRecyclerView"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
