@@ -30,10 +30,11 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-    @SuppressLint("StaticFieLeak")
+
     fun insertName(name : NameEntity){
 
-        val insertTask = object : AsyncTask<Unit,Unit,Unit>(){
+        val insertTask = @SuppressLint("StaticFieldLeak")
+        object : AsyncTask<Unit,Unit,Unit>(){
             override fun doInBackground(vararg params: Unit?) {
                 db.nameDAO().insert(name)
             }
@@ -47,7 +48,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun getName(){
-        val getTask = (object : AsyncTask<Unit,Unit,Unit>() {
+        val getTask = (@SuppressLint("StaticFieldLeak")
+        object : AsyncTask<Unit,Unit,Unit>() {
 
             override fun doInBackground(vararg params: Unit?){
                 nameList = db.nameDAO().getAll()
