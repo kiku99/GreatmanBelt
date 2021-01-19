@@ -21,12 +21,11 @@
 
         <TableRow >
             <TextView
-                android:id="@+id/name"
+                android:id="@+id/yourname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="120dp"
                 android:layout_marginLeft="30dp"
-                android:text="홍길동님은"
                 android:textColor="@color/violet"
                 android:textStyle="bold"
                 android:textSize="50sp" />
