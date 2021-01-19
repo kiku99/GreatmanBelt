@@ -2,7 +2,6 @@ package com.example.a2020greatmanbelt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import androidx.navigation.fragment.NavHostFragment
 import androidx.room.Room
 import kotlinx.android.synthetic.main.fragment_checklist.*
