@@ -18,18 +18,6 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
 
-        val db = Room.databaseBuilder(
-                applicationContext,
-                NameDatabase::class.java, "database-name"
-        ).allowMainThreadQueries()
-                .build()
-
-        yourname.text = db.nameDAO().getAll().toString()
-
-        StartBtn.setOnClickListener{
-            db.nameDAO().insert(NameEntity(edittext_name.text.toString()))
-            yourname.text = db.nameDAO().getAll().toString()
-        }
     }
 }
 

@@ -1,21 +1,15 @@
 package com.example.a2020greatmanbelt.data
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
+import androidx.room.*
 import androidx.room.OnConflictStrategy.REPLACE
-import androidx.room.Query
 
 @Dao
 interface NameDAO {
 
-    @Insert(onConflict = REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addUser(name : NameEntity)
 
-    @Query("SELECT * FROM user_name")
+    @Query("SELECT * FROM user_table ORDER BY id ASC")
     fun readAllData() : LiveData<List<NameEntity>>
-
-    @Delete
-    fun delete(name : NameEntity)
 }
