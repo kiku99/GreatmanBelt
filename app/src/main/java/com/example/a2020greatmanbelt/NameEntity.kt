@@ -3,10 +3,9 @@ package com.example.a2020greatmanbelt
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "name")
+@Entity(tableName = "user_name")
 data class NameEntity(
-    var name : String
-) {
     @PrimaryKey(autoGenerate = true)
-    var id : Int = 0
-}
+    var name : String,
+    var id : Int
+)
