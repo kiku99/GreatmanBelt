@@ -1,11 +1,9 @@
-package com.example.a2020greatmanbelt
+package com.example.a2020greatmanbelt.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import java.net.ContentHandler
-import java.security.AccessControlContext
 
 @Database(entities = [NameEntity::class], version = 1, exportSchema = false)
 abstract class NameDatabase : RoomDatabase(){
@@ -15,7 +13,7 @@ abstract class NameDatabase : RoomDatabase(){
         @Volatile
         private var INSTANCE: NameDatabase? = null
 
-        fun getDatabase(context: Context): NameDatabase{
+        fun getDatabase(context: Context): NameDatabase {
             val tempInstance = INSTANCE
             if(tempInstance != null){
                 return tempInstance
