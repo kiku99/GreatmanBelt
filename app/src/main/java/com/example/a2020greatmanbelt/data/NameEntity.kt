@@ -1,4 +1,4 @@
-package com.example.a2020greatmanbelt
+package com.example.a2020greatmanbelt.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

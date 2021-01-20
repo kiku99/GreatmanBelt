@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.room.Room
+import com.example.a2020greatmanbelt.data.NameDatabase
+import com.example.a2020greatmanbelt.data.NameEntity
 import kotlinx.android.synthetic.main.fragment_checklist.*
 import kotlinx.android.synthetic.main.fragment_main_gragment.*
 
